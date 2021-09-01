@@ -5,8 +5,6 @@ import PropTypes from 'prop-types'
 
 const PrimeraApp = ({ saludo, subtitulo }) => {
 
-
-
     return (
         <Fragment>
             <h1> { saludo } </h1>
