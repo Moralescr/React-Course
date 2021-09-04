@@ -3,7 +3,7 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types'
 
-const CounterApp = ( { numero } ) => {
+export const CounterApp = ( { numero = 10} ) => {
 
     const [counter, setCounter ] = useState(numero);
 
@@ -22,8 +22,8 @@ const CounterApp = ( { numero } ) => {
 
     return (
         <>
-            <h1>CounterApp</h1>
-            <h2> { counter } </h2>
+            <h1> CounterApp</h1>
+            <h2>{counter}</h2>
             <button onClick = { handleAdd }> +1 </button>
             <button onClick = { handleReset }> Reset </button>
             <button onClick = { handleSubtract }> -1 </button>
